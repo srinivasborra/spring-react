@@ -23,7 +23,8 @@ class EmployeeList extends React.Component{
 }
 function mapStateToProps(state){
 	return {
-		employees : state.employees
+		employees : state.employees,
+		otherdetails : state.otherDetails
 	};
 }
 

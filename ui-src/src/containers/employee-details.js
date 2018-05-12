@@ -1,6 +1,6 @@
-import React,{Component} from 'react';
+import React  from 'react';
 import {connect} from 'react-redux';
-import {selectedEmployee} from '../reducers/reducer-active-employee';
+//import {selectedEmployee} from '../reducers/reducer-active-employee';
 
 class EmployeeDetail extends React.Component{
 	render(){
@@ -18,7 +18,6 @@ class EmployeeDetail extends React.Component{
 }
 
 function mapEmpStateToProps(state){
-	console.log(state.selectedEmployee);
 	return{
 		employee : state.selectedEmployee
 	}

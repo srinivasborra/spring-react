@@ -29,7 +29,6 @@ class FormComps extends React.Component{
 						<tbody>
 						{plist}
 						</tbody>
-						
 					</table>
 				</div>
 		);
@@ -38,16 +37,21 @@ class FormComps extends React.Component{
 	}
 	render(){
 		 const PDetails = this.personDetails();
-		 const windowLoc = document.location.pathname;
 		return(
 				<div>
 				<form onSubmit={this.handleSubmit}>
-					<label>Name:<input type="text" name="name" value={this.state.name} onChange={this.handleChange}/></label>
-					<label>Address:<textarea name="address" value={this.state.address} onChange={this.handleChange}></textarea> </label>
-					<input type="submit" value="Submit" />
+				<div className="from-group">
+					<label htmlFor="name">Name</label>
+					<input type="text" name="name" value={this.state.name} onChange={this.handleChange} className="form-control"/>
+					<label htmlFor="address">Address</label>
+					<textarea name="address" value={this.state.address} onChange={this.handleChange} className="form-control"></textarea>
+					<input type="submit" value="Submit" className="btn btn-success btn-lg"/>
+				</div>
 				</form>
-				{PDetails}
-				{windowLoc}
+				<br/>
+				<div>
+					{PDetails}
+				</div>
 			   </div>
 		);
 	}

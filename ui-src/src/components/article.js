@@ -31,9 +31,20 @@ class ArticleForm extends React.Component{
 			}
 		}
   }
+  
+	scrollTable = (state,instance)=>{
+		return{
+			onScroll: (event)=>{
+				console.log("******************");
+				console.log("evnt");
+			}
+		}
+		
+	}
 	
 	listArticles(){
 			const arts = this.props.articles.articles;
+			console.log(this.props.articles.articles.length);
 			return(
 					<div>
 						<ReactTable  data={arts} 
@@ -63,8 +74,10 @@ class ArticleForm extends React.Component{
 						            	Header:'Action',
 						            }
 						          ]}
+						 style={{height: "300px"}}
 						 className="-striped -highlight"
 						 getTrProps={this.getTrProps}
+						 onScroll={this.scrollTable}
 						/>
 							
 					</div>

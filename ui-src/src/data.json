@@ -1,0 +1,14 @@
+[
+    {
+        "employeeId": 1,
+        "userName": "test1",
+        "userType": 1,
+        "userStatus": 1
+    },
+    {
+        "employeeId": 2,
+        "userName": "test2",
+        "userType": 1,
+        "userStatus": 1
+    }
+]

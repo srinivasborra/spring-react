@@ -1,3 +1,21 @@
+import {ADD_USER} from '../constants/action-types';
+const initialState={
+		users:[]
+};
+
+const userReducer = (state = initialState,action) =>{
+	switch(action.type){
+	case ADD_USER:
+			state.users.push(action.payload);
+			return state;
+	
+	default:
+			return state;
+	}
+};
+
+export default userReducer;
+/*
 export default function(){
 	return [
 	        {
@@ -57,4 +75,4 @@ export default function(){
 	        	
 	        }
 	        ]
-}
+}*/

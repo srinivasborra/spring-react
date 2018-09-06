@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu May 31 14:16:31 PDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0163-b80f-29aa-0000085fdd60 
+on database directory memory:/Users/nagaborra/Documents/workspace/spring-react/testdb with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
+Loaded from file:/Users/nagaborra/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-b11
+user.dir=/Users/nagaborra/Documents/workspace/spring-react
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.10.5
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

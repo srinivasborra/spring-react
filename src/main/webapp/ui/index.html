@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>	
+<script type="text/javascript" src="../scripts/askobj.js" async></script>
+<script type="text/javascript" src="../scripts/case-main.js" async></script>
+</head>
+<body  spellcheck="false">
+	<div id="tasks" style="top:42px; height: 100%; width:300px; z-index:2; position:absolute; right:-300px; background-color: rgba(34, 35, 37, 0.95); color:white; display:none">
+	</div>
+	<div id="message-preview">
+		<div id="messages">
+			<table></table>
+		</div>	
+		<div id="message-preview-button" ></div>
+	</div>
+	<div id="app-header">
+		<div id="header-logo" style="position: absolute; top: 0">			
+			<span onclick="askobj.go('home')" title="Full version is 4.5">Covery</span>	
+			<span onclick="askobj.case_main.test()" title="Full version is 4.5">Covery</span>		
+		</div>
+		<div id="app-toolbar"></div>
+		<div id="app-tabs"></div>
+	</div>
+	<!-- Main Layout -->
+	<div id="app-layout"></div>
+	<noscript> You need to enable JavaScript in order to use ERS. </noscript>
+</body>
+</html>
